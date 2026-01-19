@@ -1,0 +1,241 @@
+/* =========================================================
+   NAVBAR / HEADER – IMEDISA
+   Enfoque: responsive profesional · mobile-first · industrial premium
+   ========================================================= */
+
+/* ================= ROOT HEADER ================= */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 11, 12, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-gray-700);
+}
+
+/* ================= HEADER INNER ================= */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px; /* mobile first */
+}
+
+/* ================= BRAND ================= */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.container-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.container-brand-text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  color: var(--accent-color);
+  white-space: nowrap;
+}
+
+.container-brand-text p {
+  display: none; /* oculto en mobile */
+}
+
+/* ================= HEADER ACTIONS ================= */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* CTA */
+.btn-cta {
+  display: none; /* mobile clean */
+  background: var(--accent-color);
+  color: var(--color-black);
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-base);
+}
+
+.btn-cta:hover {
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-1px);
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  width: 28px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background: var(--color-white);
+  transition: var(--transition-base);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ================= SUB HEADER (MOBILE MENU) ================= */
+.sub-header {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: rgba(14, 14, 16, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-gray-700);
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-base);
+}
+
+.sub-header.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================= SUB NAV ================= */
+.sub-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+}
+
+.sub-nav a {
+  font-size: var(--font-size-md);
+  color: var(--color-gray-300);
+  transition: var(--transition-base);
+}
+
+.sub-nav a:hover {
+  color: var(--accent-color);
+}
+
+/* =========================================================
+   TABLET ≥ 768px
+   ========================================================= */
+@media (min-width: 768px) {
+  .header-inner {
+    height: 72px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .container-brand-text h3 {
+    font-size: 1.35rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .container-brand-text p {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.04rem;
+    color: var(--color-gray-400);
+  }
+
+  .btn-cta {
+    display: inline-flex;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 20px;
+  }
+
+  .sub-header {
+    top: 72px;
+  }
+
+  .sub-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0.75rem 0;
+  }
+
+  .sub-nav a {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* =========================================================
+   DESKTOP ≥ 1024px
+   ========================================================= */
+@media (min-width: 1024px) {
+  .header-inner {
+    height: 80px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .brand {
+    gap: 1rem;
+  }
+
+  .container-brand-text h3 {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .container-brand-text p {
+    font-size: var(--font-size-xs);
+  }
+
+  .header-actions {
+    gap: 1.25rem;
+  }
+
+  .hamburger {
+    display: none; /* desktop menu always visible */
+  }
+
+  .sub-header {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    border: none;
+  }
+
+  .sub-nav {
+    padding: 0;
+  }
+}

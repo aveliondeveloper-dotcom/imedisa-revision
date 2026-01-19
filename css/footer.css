@@ -1,0 +1,103 @@
+/* ================= FOOTER – IMEDISA ULTRA ================= */
+.imedisa-footer {
+  background: linear-gradient(180deg, #050505 0%, #000 100%);
+  color: #cfcfcf;
+  border-top: 1px solid rgba(242, 183, 5, 0.15);
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3.5rem;
+}
+
+.footer-logo {
+  width: 70px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-description {
+  color: #9a9a9a;
+  line-height: 1.7;
+}
+
+.footer-col h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+}
+
+.material-symbols-outlined {
+  font-size: 1.2rem;
+  color: #f2b705;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+  color: #bdbdbd;
+}
+
+.footer-col a {
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #f2b705;
+}
+
+/* Social */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Bottom */
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.8rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+}
+
+.avelion-credit a {
+  color: #f2b705;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.avelion-credit a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+:root {
+  /*coment*/
+  /* ===== Brand Colors ===== */
+  --color-black: #0b0b0c;
+  --color-dark: #141416;
+  --color-gray-900: #1c1c1f;
+  --color-gray-700: #2a2a2e;
+  --color-gray-500: #6e6e73;
+  --color-gray-300: #b3b3b8;
+  --color-white: #ffffff;
+
+  /* Accent (seguridad industrial) */
+  --accent-color: #f2b705;
+
+  --overlay-dark: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+
+  --card-bg-dark: linear-gradient(180deg, #111, #0b0b0b);
+  --shadow-heavy: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+  /* ===== Typography ===== */
+  --font-primary: "Inter", "Roboto", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+  --font-size-hero: 3.5rem;
+
+  --line-height-brand: 1;
+  --line-height-base: 1.6;
+
+  /* ===== Layout ===== */
+  --container-width: 1200px;
+  --container-padding: 1.5rem;
+
+  /* ===== Effects ===== */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-hard: 0 20px 60px rgba(0, 0, 0, 0.55);
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s ease;
+}

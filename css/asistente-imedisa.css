@@ -1,0 +1,270 @@
+/* =========================================================
+   ASISTENTE IMEDISA · RESPONSIVE PROFESIONAL
+   Mobile-first · Tablet · Desktop
+   ========================================================= */
+
+/* ================= BASE ================= */
+.hero-assistant {
+  position: relative;
+  padding: clamp(3rem, 6vw, 6rem) 0;
+  color: #eaeaea;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-assistant::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+}
+
+.hero-assistant > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= GRID ================= */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ================= COPY ================= */
+.hero-copy h1 {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.hero-copy p {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: #b5b5b5;
+  max-width: 560px;
+}
+
+.hero-copy p strong {
+  color: var(--accent-color);
+}
+
+.hero-points {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.hero-points li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.7rem;
+  color: #d0d0d0;
+  font-size: 0.95rem;
+}
+
+.hero-points li::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  font-size: 0.65rem;
+  color: var(--accent, #f2b705);
+}
+
+/* ================= CHATBOT ================= */
+.chatbot {
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 440px;
+  max-height: 520px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+/* HEADER */
+.chatbot-header {
+  padding: 1rem 1.2rem;
+  background: #141414;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.chatbot-header strong {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.chatbot-header span {
+  font-size: 0.75rem;
+  color: #9a9a9a;
+}
+
+/* WINDOW */
+.chat-window {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* MENSAJES */
+.message {
+  max-width: 90%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border-left: 3px solid var(--accent, #f2b705);
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #f2b705;
+  color: #0b0b0b;
+  font-weight: 500;
+}
+
+/* INPUT */
+.chat-input {
+  padding: 0.8rem;
+  border-top: 1px solid #1f1f1f;
+  display: flex;
+  gap: 0.5rem;
+  background: #0f0f0f;
+}
+
+.chat-input input {
+  flex: 1;
+  background: #0b0b0b;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.chat-input input:focus {
+  outline: none;
+  border-color: var(--accent, #f2b705);
+}
+
+.chat-input button {
+  background: var(--accent, #f2b705);
+  color: #0b0b0b;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* BOTONES GUIADOS */
+.chat-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chat-buttons button {
+  flex: 1 1 100%;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #e0e0e0;
+  padding: 0.55rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+/* ================= CONTACT ================= */
+.contact-info {
+  background: #0b0b0b;
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  color: #d0d0d0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.contact-details h2 {
+  font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 260px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ================= CTA ================= */
+.contact-cta {
+  background: #111;
+  padding: clamp(3rem, 6vw, 4rem) 0;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.contact-cta p {
+  margin-bottom: 4.2rem;
+}
+
+/* =========================================================
+   TABLET ≥ 768px
+   ========================================================= */
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr 420px;
+    align-items: center;
+  }
+
+  .chatbot {
+    min-height: 480px;
+  }
+
+  .chat-buttons button {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================================================
+   DESKTOP ≥ 1200px
+   ========================================================= */
+@media (min-width: 1200px) {
+  .hero-grid {
+    gap: 4rem;
+  }
+
+  .chatbot {
+    max-height: 540px;
+  }
+}

@@ -1,0 +1,402 @@
+/* ================= SERVICIOS – IMEDISA ================= */
+/* Mobile-first · Industrial Premium · Producción real */
+
+/* ================= HERO ================= */
+.services-hero {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: #000 url("../assets/img/backgrounds/hero-industrial.jpg") center /
+    cover no-repeat;
+  overflow: hidden;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    #000 100%
+  );
+  pointer-events: none;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  padding: clamp(2rem, 6vw, 4rem);
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.services-hero-content h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0.6rem 0 1rem;
+}
+.services-hero-content h1 strong {
+  color: var(--accent-color);
+}
+
+.services-hero-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+/* ================= STAGES ================= */
+.service-stage {
+  display: grid;
+  gap: 2.5rem;
+  padding: clamp(3rem, 7vw, 5rem) 1.5rem;
+}
+
+.stage-content {
+  max-width: 720px;
+}
+
+.stage-content h2 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--accent-color);
+  margin-bottom: 0.6rem;
+}
+
+.stage-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+/* ================= FLAGS ================= */
+.technical-flags {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.technical-flags li {
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.technical-flags li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.technical-flags.positive li::before {
+  content: "+";
+}
+
+/* ================= VIDEO GALLERY ================= */
+.video-gallery {
+  position: relative;
+  width: 100%;
+  height: clamp(260px, 50vw, 460px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+}
+
+.video-gallery img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeLoop 18s infinite;
+}
+
+.video-gallery img:nth-child(1) {
+  animation-delay: 0s;
+}
+.video-gallery img:nth-child(2) {
+  animation-delay: 3s;
+}
+.video-gallery img:nth-child(3) {
+  animation-delay: 6s;
+}
+.video-gallery img:nth-child(4) {
+  animation-delay: 9s;
+}
+.video-gallery img:nth-child(5) {
+  animation-delay: 12s;
+}
+.video-gallery img:nth-child(6) {
+  animation-delay: 15s;
+}
+
+@keyframes fadeLoop {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ================= ENGINEERING ================= */
+.engineering {
+  background: #050505;
+}
+
+.engineering-steps {
+  margin-top: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.engineering-steps li {
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.engineering-metrics {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.metric {
+  border: 1px solid var(--accent-color);
+  padding: 1.4rem;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.metric span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+/* ================= BRANDS ================= */
+.brands {
+  padding: 2rem 0 3rem;
+  background: #050505;
+  overflow: hidden;
+}
+
+.brands-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.brands-track {
+  display: flex;
+  gap: clamp(2.5rem, 6vw, 4rem);
+  width: max-content;
+  animation: brands-scroll 30s linear infinite;
+  align-items: center;
+}
+
+.brands-track img {
+  height: clamp(36px, 6vw, 48px);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.brands-track img:hover {
+  opacity: 1;
+}
+
+@keyframes brands-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= CONTACT INFO ================= */
+.contact-info {
+  background: #0b0b0b;
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  color: #d0d0d0;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.contact-details h2 {
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.contact-details p strong {
+  color: var(--accent-color);
+}
+
+.contact-channels {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.4rem;
+}
+
+.contact-channels li {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 280px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ================= CTA ================= */
+.contact-cta {
+  background: #111;
+  padding: clamp(3rem, 7vw, 4rem) 0;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--accent-color);
+}
+
+.contact-cta p {
+  margin: 0.8rem 0 1.5rem;
+  color: #b5b5b5;
+}
+
+/* ================= FOOTER ================= */
+.imedisa-footer {
+  background: linear-gradient(180deg, #050505 0%, #000 100%);
+  color: #cfcfcf;
+  border-top: 1px solid rgba(242, 183, 5, 0.15);
+  font-size: 0.85rem;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+}
+
+.footer-logo {
+  width: 70px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-description {
+  color: #9a9a9a;
+  line-height: 1.7;
+}
+
+.footer-col h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.1rem;
+}
+
+.material-symbols-outlined {
+  font-size: 1.2rem;
+  color: #f2b705;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  color: #bdbdbd;
+}
+
+.footer-col a {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #f2b705;
+}
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.6rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #8a8a8a;
+}
+
+/* ================= BREAKPOINTS ================= */
+@media (min-width: 768px) {
+  .service-stage {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .engineering-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services-hero {
+    min-height: 80vh;
+  }
+
+  .services-hero-content {
+    padding-left: 5rem;
+  }
+}

@@ -1,0 +1,108 @@
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*co*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-base);
+  background-color: var(--color-black);
+  color: var(--color-gray-300);
+}
+
+/* ===== Global Elements ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent-color);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+p {
+  color: var(--color-gray-300);
+}
+
+/* ===== Layout Helpers ===== */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section-header {
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
+.section-header p {
+  margin-top: 0.75rem;
+  color: var(--color-gray-500);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all var(--transition-base);
+}
+
+.btn.primary {
+  background-color: var(--accent-color);
+  color: var(--color-black);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn.secondary {
+  border: 1px solid var(--color-gray-500);
+  color: var(--color-white);
+}
+
+.btn.secondary:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMEDISA | Evaluación Técnica</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/asistente-imedisa.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <div id="navbar"></div>
+
+    <!-- ================= HERO / ASISTENTE ================= -->
+    <section
+      class="hero-assistant parallax-section"
+      data-parallax="services"
+      style="
+        background-image: url(&quot;assets/img/backgrounds/imedisa-ingenieria.jpg&quot;);
+      "
+    >
+      <div class="container hero-grid">
+        <!-- TEXTO HERO -->
+        <div class="hero-copy">
+          <h1>Evaluación técnica en proceso</h1>
+
+          <p>
+            Este asistente recopila información clave de tu montacargas para
+            <strong>construir un análisis técnico preliminar</strong> que llega
+            directamente al equipo de ingenieros IMEDISA.
+          </p>
+
+          <ul class="hero-points">
+            <li>Datos técnicos estructurados desde el primer contacto</li>
+            <li>Análisis orientado a riesgo, urgencia e impacto operativo</li>
+            <li>Ingeniería preparada antes de cualquier visita o cotización</li>
+          </ul>
+        </div>
+
+        <!-- CHATBOT -->
+        <div class="chatbot hero-chatbot">
+          <header class="chatbot-header">
+            <strong>IMEDISA · Evaluación Técnica</strong>
+            <span>Análisis inicial del equipo</span>
+          </header>
+
+          <section id="chat" class="chat-window"></section>
+
+          <form id="chat-form" class="chat-input">
+            <input
+              id="user-input"
+              type="text"
+              placeholder="Describe el estado de tu montacargas"
+            />
+            <button type="submit">Continuar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT INFO ================= -->
+    <section class="contact-info">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <h2>Contacto directo con ingeniería IMEDISA</h2>
+          <p>
+            La información generada aquí se utiliza únicamente para construir un
+            análisis técnico preliminar que es enviado directamente a nuestros
+            ingenieros.
+            <strong>No se almacena en la web ni en bases de datos</strong>; solo
+            se transforma en un mensaje técnico para dar seguimiento preciso a
+            tu caso.
+          </p>
+
+          <ul class="contact-channels">
+            <li><strong>Teléfono:</strong> +52 55 5303 4749</li>
+            <li><strong>Horario:</strong> L–V · 09:00–18:00</li>
+            <li>
+              <strong>Ubicación:</strong> C. 4 4, Hab Chalma la Unión, 54142
+              Tlalnepantla, Méx.
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps?q=C.+4+4,+Hab+Chalma+la+Unión,+54142+Tlalnepantla,+Méx.&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="contact-cta">
+      <div class="container">
+        <h2>Ingeniería antes que cotización</h2>
+        <p>
+          Cada respuesta <strong>fortalece el análisis</strong> técnico de tu
+          equipo.
+        </p>
+        <a href="tel:+525553034749" class="btn btn-cta"> Llamar a IMEDISA </a>
+      </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <div id="footer"></div>
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/imedisa-brain.js"></script>
+    <script src="js/assistant-chat.js"></script>
+  </body>
+</html>

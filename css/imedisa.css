@@ -1,0 +1,349 @@
+/* ================= IMEDISA.CSS ================= */
+/* Arquitectura responsive profesional */
+/* Mobile-first · Tablet · Desktop · Industrial Premium */
+
+/* ================= BASE LAYOUT ================= */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+/* ================= HERO ================= */
+.about-hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  padding: clamp(2rem, 6vw, 6rem);
+  background: #000;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85));
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  background: var(--overlay-dark);
+  padding: clamp(1.6rem, 4vw, 3rem);
+  border-radius: 18px;
+  box-shadow: var(--shadow-heavy);
+}
+
+.about-hero-content h1 {
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  letter-spacing: 0.14em;
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+  color: #d0d0d0;
+  line-height: 1.7;
+}
+
+/* ================= SECTIONS ================= */
+.about-section {
+  background: #000;
+  padding: 4rem 2rem;
+}
+
+.about-section.dark {
+  background: #0b0b0b;
+}
+
+.about-section h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 1.4rem;
+  color: var(--accent-color);
+}
+
+.about-section p {
+  max-width: 880px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #bcbcbc;
+  margin-bottom: 1.2rem;
+}
+.about-section p strong {
+  color: var(--accent-color);
+}
+/* ================= METRICS ================= */
+.about-metrics {
+  display: grid;
+  padding: 4rem 2rem;
+  grid-template-columns: 1fr;
+  background: #080808;
+}
+
+.metric {
+  padding: clamp(2.5rem, 6vw, 4rem) 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.metric-number {
+  font-size: clamp(2.4rem, 6vw, 3.2rem);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9a9a9a;
+}
+
+/* ================= GRID / CARDS ================= */
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.card {
+  background: var(--card-bg-dark);
+  padding: clamp(1.8rem, 4vw, 2.6rem);
+  border-radius: 18px;
+  box-shadow: var(--shadow-heavy);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent-color);
+}
+
+.card p,
+.card li {
+  font-size: 0.9rem;
+  color: #b5b5b5;
+  line-height: 1.65;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= COMPLIANCE ================= */
+.compliance-list {
+  display: grid;
+  padding: 4rem 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.compliance-list span {
+  background: var(--card-bg-dark);
+  padding: 1.2rem 1.4rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  font-size: 0.85rem;
+  color: #d0d0d0;
+}
+
+/* ================= CONTACT ================= */
+.contact-info {
+  padding: 4rem 2rem;
+  background: #0b0b0b;
+  color: #d0d0d0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.contact-details h2 {
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  max-width: 560px;
+}
+
+.contact-details p strong {
+  color: var(--accent-color);
+}
+
+.contact-channels {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.contact-channels li {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 280px;
+  border: none;
+  border-radius: 14px;
+}
+
+/* ================= CTA ================= */
+.contact-cta {
+  background: #111;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: var(--accent-color);
+}
+
+.contact-cta p {
+  margin: 0.8rem 0 1.5rem;
+  color: #b5b5b5;
+}
+
+/* ================= FOOTER ================= */
+.imedisa-footer {
+  background: linear-gradient(180deg, #050505, #000);
+  color: #cfcfcf;
+  border-top: 1px solid rgba(242, 183, 5, 0.15);
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+}
+
+.footer-logo {
+  width: 70px;
+  margin-bottom: 1.2rem;
+}
+
+.footer-description {
+  color: #9a9a9a;
+  line-height: 1.7;
+}
+
+.footer-col h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.material-symbols-outlined {
+  font-size: 1.2rem;
+  color: #f2b705;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+  color: #bdbdbd;
+}
+
+.footer-col a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #f2b705;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer-bottom {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding: 1.8rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+}
+
+.avelion-credit a {
+  color: #f2b705;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ================= BREAKPOINTS ================= */
+@media (min-width: 768px) {
+  .about-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .compliance-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .compliance-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

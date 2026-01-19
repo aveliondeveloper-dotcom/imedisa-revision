@@ -1,0 +1,177 @@
+/* =========================================================
+   RESPONSIVE SYSTEM – IMEDISA
+   Mobile-first · Producción real
+   Controla TODOS los HTML
+   ========================================================= */
+
+/* =========================================================
+   MOBILE CRÍTICO (≤480px)
+   ========================================================= */
+@media (max-width: 480px) {
+  /* ===== HERO ===== */
+  .hero {
+    min-height: auto;
+    padding: 4.5rem 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ===== GRIDS ===== */
+  .certificados-container,
+  .highlights-grid,
+  .promo-grid,
+  .testimonial-grid,
+  .about-values,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== BRANDS ===== */
+  .brands-track {
+    gap: 2.2rem;
+  }
+
+  .brands-track img {
+    height: 40px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* ===== NAVBAR CTA ===== */
+  .btn-cta {
+    display: none;
+  }
+
+  .sub-nav .nav-cta {
+    display: block;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-gray-700);
+  }
+
+  .sub-nav .nav-cta a {
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+}
+
+/* =========================================================
+   MOBILE GRANDE (481px–767px)
+   ========================================================= */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .certificados-container,
+  .highlights-grid,
+  .about-values {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .promo-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   TABLET (768px–1023px)
+   ========================================================= */
+@media (min-width: 768px) {
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero-content {
+    max-width: 720px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .certificados-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights-grid,
+  .promo-grid,
+  .testimonial-grid,
+  .about-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CTA sigue dentro del sub-nav */
+  .btn-cta {
+    display: none;
+  }
+}
+
+/* =========================================================
+   DESKTOP (≥1024px)
+   ========================================================= */
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero-content {
+    max-width: 820px;
+  }
+
+  .certificados-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .promo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ===== NAVBAR ===== */
+  .hamburger {
+    display: none;
+  }
+
+  .sub-header {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    border: none;
+  }
+
+  .sub-nav {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 0;
+  }
+
+  .sub-nav .nav-cta {
+    display: none;
+  }
+
+  .btn-cta {
+    display: inline-flex;
+  }
+}
